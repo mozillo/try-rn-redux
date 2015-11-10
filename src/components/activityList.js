@@ -43,8 +43,8 @@ export default class ActivityList extends Component {
 	}
 
 	render() {
-		const {getLatest, postActivity, postComment, refreshList} = this.props;
-		const { dataSource } = this.props;
+		const {getLatest, postActivity, postComment, refreshList} = this.props.actions;
+		const { dataSource } = this.props.state;
 		
 		return (
 		<View>
